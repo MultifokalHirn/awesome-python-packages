@@ -1,0 +1,11 @@
+{
+    "markdown.extension.toc.levels": "2..4",
+    "markdown.extension.toc.orderedList": false,
+    "[markdown]": {
+        "editor.rulers": [
+            79
+        ],
+        // "editor.wordWrap": "bounded",
+    },
+    "cSpell.words": [],
+}
