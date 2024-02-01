@@ -13,7 +13,7 @@
     - [Refactoring](#refactoring)
 - [👀 Status: *lookin' awesome*](#-status-lookin-awesome)
   - [Development](#development-1)
-  - [Testing](#testing)
+  - [Static Analysis/Testing/etc](#static-analysistestingetc)
 - [❓ Status: *unknown*](#-status-unknown)
 - [🫡 Status: *was awesome*](#-status-was-awesome)
 
@@ -46,9 +46,12 @@
 - [`hatch`](https://hatch.pypa.io/latest/) - extensible project manager; yay! another thingsy-ma-bobs that requires me to throw a bunch of stuff that cost me blood, sweat, tears, and sleepless nights *out the window* so that I can see if it actually does anything significantly better. And I will probably have learn a bunch of stuff too to get it to work. *Yay!*
   - [`hatch-fancy-pypi-readme`](https://github.com/hynek/hatch-fancy-pypi-readme)
 
-#### Testing
+#### Static Analysis/Testing/etc
 
 - [`pytest-watch`](https://github.com/joeyespo/pytest-watch) - a zero-config CLI tool that runs pytest, and re-runs it when a file in your project changes. It beeps on failures and can run arbitrary commands on each passing and failing test run.
+- [`beartype`](https://github.com/beartype/beartype) - you are confident with your type annotations? Well, I guess nothing speaks against bringing those type-checks into production! 👍
+  - [`pytest-beartype`](https://github.com/beartype/pytest-beartype) - propably a great starting point to see if `beartype` is for you (or your codebase)
+- [`plum`](https://github.com/beartype/plum) - *"an implementation of multiple dispatch that is Pythonic, yet close to how Julia does it."* This really looks like a good way to tidy up codebases that were initially written in times where type annotations were not a thing yet. And where a parameter must allow for multiple types for whatever reason and you want to avoid a bunch of `if`-statements (which you always do).
 
 ## ❓ Status: *unknown*
 >
